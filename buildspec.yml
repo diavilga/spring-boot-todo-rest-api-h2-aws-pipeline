@@ -3,7 +3,8 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: openjdk8
+      #java: openjdk8  // Error en AWS (YAML_FILE_ERROR: Unknown runtime version named 'openjdk8' of java. This build image has the following versions: corretto11, corretto8)
+      java: corretto8
     commands:
       - echo install
     #finally:
